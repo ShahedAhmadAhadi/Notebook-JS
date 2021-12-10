@@ -22,14 +22,13 @@ const App = () => {
         if (!ref.current) {
             return;
         }
-        const result = await ref.current.vuild({
+        const result = await ref.current.build({
             entryPoints: ['index.js'],
             bundle: true,
             write: false,
             plugins: [unpkgPathPlugin()]
         })
-        console.log(result)
-        setCode(result.code)
+        setCode(result.outputFiles[0].text)
     };
 
     return (
