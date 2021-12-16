@@ -1,7 +1,7 @@
 import 'bulmaswatch/superhero/bulmaswatch.min.css';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { store } from './state';
+import { store } from './redux';
 import TextEditor from './components/text-editor';
 
 const App = () => {
